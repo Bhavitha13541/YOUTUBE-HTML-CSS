@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlexBox</title>
+</head>
+<body>
+    <div class = "flex-container">
+        <div class = "box1">flex1</div>
+        <div class = "box2">flex2</div>
+    </div>
+    <div class = "flex-container1">
+        <div class = "img1">
+            <img class = "image" src = "channels/channel-1.jpeg">
+        </div>
+        <div class = "img2">
+            <img class = "image" src = "channels/channel-2.jpeg"
+        </div>
+    </div>
+    <style>
+        .flex-container {
+            display:flex;
+            flex-wrap:row;
+            gap:0px;
+        }
+        .box1 {
+            background-color: lightpink;
+            font-size:30px;
+            width:100px;
+            height:50px;
+            padding:50px;
+            margin-bottom: 10px;
+        }
+        .box2 {
+            background-color: lightgreen;
+            font-size:30px;
+            width:100px;
+            height:50px;
+            padding:50px;
+            margin-bottom: 10px;
+        }
+        .flex-container1 {
+            display:flex;
+            flex-direction:row;
+            gap:10px;
+        }
+        .img1 {
+            border:5px solid black;
+        }
+        .img2{
+            border:5px solid black;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Grid exercise</title>
+</head>
+<body>
+    <div style = "
+        display:grid; 
+        grid-template-columns: 400px 400px;">
+
+        <div style = "background-color: lightblue">Grid - 1</div>
+        <div style = "background-color: lightgreen">Grid - 2 </div>
+    </div>
+
+    <div style = "
+        display:grid; 
+        grid-template-columns: 400px 400px;">
+        
+        <div style = "background-color: lightgoldenrodyellow">Grid - 1</div>
+        <div style = "background-color: rgb(34, 124, 34)">Grid - 2 </div>
+    </div>
+
+    <div class = "grid-container">
+        <div class = "box">1</div>
+        <div class = "box">2</div>
+        <div class = "box">3</div>
+        <div class = "box">4</div>
+        <div class = "box">5</div>
+    </div>
+    <style>
+
+        .box {
+            background-color: lightsalmon;
+            padding:20px;
+            font-size:30px;
+        }
+
+        .grid-container {
+            display:grid;
+            grid-template-columns:250px 300px 250px;
+            grid-template-rows: 200px 200px 200px;
+            gap:5px;
+        }
+    </style>
+    
+</body>
+</html> -->
+
+
+                                  <!-- GRID WITH NAMED AREAS -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div class = "grid-container">
+        <header class = "header">Header</header>
+        <aside class = "sidebar">Sidebar</aside>
+        <footer class = "footer">Footer</footer>
+        <main class = "main">Main</main>
+    </div>
+    <style>
+        .grid-container {
+            display:grid;
+            grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+            grid-template-columns: 120px 1fr;
+            place-items: center;
+            gap:10px;
+        }
+        .header {
+            grid-area:header;
+            background-color:aquamarine;
+        }
+        .sidebar {
+            grid-area:sidebar;
+            background-color:lime;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: lightsalmon
+        }
+        .main {
+            grid-area: main;
+            background-color: brown;
+        }
+
+    </style>
+</body>
+</html>
